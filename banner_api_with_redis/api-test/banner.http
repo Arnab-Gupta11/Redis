@@ -1,0 +1,23 @@
+### Variables
+@baseUrl = http://localhost:3000
+@contentType = application/json
+
+POST {{baseUrl}}/banner
+Content-Type: {{contentType}}
+
+{
+  "message": "Hello Redis Learner"
+}
+
+###
+
+GET {{baseUrl}}/banner
+
+###
+
+
+GET {{baseUrl}}/banner/exist
+
+
+###
+DELETE {{baseUrl}}/banner
