@@ -1,0 +1,25 @@
+### Variables
+@baseUrl = http://localhost:3000
+@contentType = application/json
+
+POST {{baseUrl}}/otp
+Content-Type: {{contentType}}
+
+{
+  "phone": "121212"
+}
+
+###
+
+POST {{baseUrl}}/otp/verify
+Content-Type: {{contentType}}
+
+{
+  "phone": "121212",
+  "otp":"172848"
+}
+
+###
+
+GET {{baseUrl}}/otp/121212/ttl
+
