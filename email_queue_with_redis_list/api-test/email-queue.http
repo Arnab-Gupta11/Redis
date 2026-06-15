@@ -1,0 +1,18 @@
+### Variables
+@baseUrl = http://localhost:3000
+@contentType = application/json
+
+POST {{baseUrl}}/emails
+Content-Type: {{contentType}}
+
+{
+  "to":"Arnab Gupta",
+  "subject": "What is react?",
+  "body":"arnab@gmaial.com"
+}
+
+###
+
+GET {{baseUrl}}/email/process-one
+
+
