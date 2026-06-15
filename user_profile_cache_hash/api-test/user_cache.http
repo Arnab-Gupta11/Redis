@@ -1,0 +1,31 @@
+### Variables
+@baseUrl = http://localhost:3000
+@contentType = application/json
+
+POST {{baseUrl}}/user/1/json
+Content-Type: {{contentType}}
+
+{
+  "name":"Arnab Gupta",
+  "phone": "121212",
+  "email":"arnab@gmaial.com"
+}
+
+###
+
+POST {{baseUrl}}/user/1/hash
+Content-Type: {{contentType}}
+
+{
+  "name":"Arnab Gupta",
+  "phone": "121212",
+  "email":"arnab1@gmaial.com"
+}
+
+
+###
+
+GET {{baseUrl}}/user/1/json
+
+###
+GET {{baseUrl}}/user/1/hash
